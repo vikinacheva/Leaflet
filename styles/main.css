@@ -1,0 +1,97 @@
+:root {
+  --main-color: #5cacbcd5;
+  --body-color: #f3efef;
+  --nav-bar: #3a3737;
+  --hover: #b6c3c3;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  background-color: var(--body-color);
+  text-align: center;
+}
+
+@font-face {
+  font-family: MyFont;
+  src: url(../styles/fonts/Questrial-Regular.ttf);
+}
+
+* {
+  font-family: MyFont;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: var(--main-color);
+}
+
+.header h1 {
+  font-size: 40px;
+  color: var(--nav-bar);
+}
+
+.header p {
+  font-size: 15px;
+  color: var(--nav-bar);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--nav-bar);
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: var(--body-color);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: var(--hover);
+  color: var(--nav-bar);
+}
+
+h1,
+h3 {
+  text-align: center;
+  color: var(--nav-bar);
+}
+
+#clickMe {
+  background-color: var(--main-color);
+  border: none;
+  color: var(--nav-bar);
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin: 0;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+#clickMe:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#startText { 
+  padding-bottom: 20px;
+}
